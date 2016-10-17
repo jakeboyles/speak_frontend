@@ -23,7 +23,8 @@
     }});
   }
 
-  $("button").on("click",function(){
+  $("form").on("submit",e => {
+    e.preventDefault();
     var text = $("#text").val();
     var name = $("#name").val();
     saySomething(text,name);
